@@ -3,20 +3,22 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Hero = () => {
     return (
-        <section className="w-full h-full relative bg-red-600">
+        <section className="w-full h-full relative">
             <div className="flexCenter max-container relative w-full">
                 <Image
-                    src="/Hero.jpg"
-                    // src="/Hero1.jpg"
+                    // src="/Hero.jpg"
+                    src="/Hero5.jpg"
                     alt="boat"
                     width={1440}
                     height={580}
                     className="w-full object-cover object-center 2xl:rounded-5xl"
                 />
             </div>
-            <div className="absolute w-full h-full top-0 left-0 bg-gray-900/30"></div>
+            {/* <div className="absolute w-full h-full top-0 left-0 bg-gray-900/30"></div> */}
             <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4">
-                <h2 className="py-4 font-bold text-2xl">Unlock Travel Inteligence</h2>
+                <h2 className="py-4 font-bold text-2xl">
+                    Unlock Travel Inteligence
+                </h2>
                 <form
                     className="flex justify-between items-center max-w-[700px] mx-auto w-full border p-1
           rounded-md text-black bg-gray-100/90"
@@ -26,7 +28,7 @@ const Hero = () => {
                             className="bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none
                   "
                             type="text"
-                            placeholder="Search Destinations"
+                            placeholder="Search"
                         />
                     </div>
                     <div>
