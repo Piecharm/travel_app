@@ -16,7 +16,8 @@ body {
 
 @layer utilities {
     .btn_white {
-        @apply border-white bg-white px-8 py-3 text-green-50;
+        /* @apply border-white bg-white px-8 py-3 text-green-50; */
+        @apply border-white bg-white px-8 py-3 text-gray-90;
     }
     .btn_white_text {
         @apply border-white bg-white px-8 py-3 text-gray-90;
@@ -24,8 +25,14 @@ body {
     .btn_green {
         @apply border-green-50 bg-green-50 px-8 py-5 text-white;
     }
-    .btn_dark_green {
+    /* .btn_dark_green {
         @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+    } */
+    .btn_transparent_blue {
+        @apply px-8 py-3 bg-transparent outline-none border-indigo-400 rounded text-indigo-500 font-medium active:scale-95 hover:bg-[#00538C] hover:text-white hover:border-transparent focus:bg-indigo-600 focus:text-white focus:border-transparent focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200;
+    }
+    .btn_dark_blue {
+        @apply px-8 py-3 bg-[#00538C] outline-none rounded text-white shadow-indigo-200 shadow-lg font-medium active:shadow-none active:scale-95 hover:bg-indigo-600 focus:bg-indigo-600 focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200;
     }
     .btn_dark_green_outline {
         @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
@@ -125,13 +132,14 @@ body {
     }
 
     /* Hero */
-    .hero-map {
+    /* .hero-map {
         @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
-    }
+    } */
 
     /* Get App */
     .get-app {
-        @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-[#eeeef4]  bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+        /* @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-[#3e7b88] bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl; */
+        @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-[#00538C] bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
     }
 }
 

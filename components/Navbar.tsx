@@ -5,14 +5,9 @@ import Button from "./Button";
 
 const Navbar = () => {
     return (
-        <nav className="flexBetween max-container padding-container relative z-30 bg-[#F7F7F7]">
+        <nav className="flexBetween max-container px-5 relative z-30 bg-[#F7F7F7]  ">
             <Link href="/">
-                <Image
-                    src="/logo1.jpg"
-                    alt="logo"
-                    width={110}
-                    height={29}
-                />
+                <Image src="/logo.jpg" alt="logo" width={110} height={29} />
             </Link>
             <ul className="hidden h-full gap-12 lg:flex">
                 {NAV_LINKS.map((link) => (
@@ -25,13 +20,13 @@ const Navbar = () => {
                     </Link>
                 ))}
             </ul>
-            <div className="lg:flexCenter hidden">
+            <div className="lg:flexCenter hidden gap-4">
                 <Button
                     type="button"
                     title="Login"
-                    icon="/user.svg"
-                    variant="btn_dark_green"
+                    variant="btn_transparent_blue"
                 />
+                <Button type="button" title="Sign Up" variant="btn_dark_blue" />
             </div>
             <Image
                 src="menu.svg"

@@ -6,15 +6,13 @@ const Hero = () => {
         <section className="w-full h-full relative">
             <div className="flexCenter max-container relative w-full">
                 <Image
-                    // src="/Hero.jpg"
-                    src="/Hero5.jpg"
+                    src="/Hero.jpg"
                     alt="boat"
                     width={1440}
                     height={580}
                     className="w-full object-cover object-center 2xl:rounded-5xl"
                 />
             </div>
-            {/* <div className="absolute w-full h-full top-0 left-0 bg-gray-900/30"></div> */}
             <div className="absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4">
                 <h2 className="py-4 font-bold text-2xl">
                     Unlock Travel Inteligence
